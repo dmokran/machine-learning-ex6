@@ -16,10 +16,11 @@ sim = 0;
 %
 %
 
+difference = x1 - x2;
+squared = difference' * difference;
+twoSsquared = 2 * sigma^2;
 
-
-
-
+sim = exp(- squared / twoSsquared);
 
 % =============================================================
     
