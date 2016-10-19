@@ -21,10 +21,12 @@ function [model] = svmTrain(X, Y, C, kernelFunction, ...
 %
 
 if ~exist('tol', 'var') || isempty(tol)
+    %tol = 1e-9;
     tol = 1e-3;
 end
 
 if ~exist('max_passes', 'var') || isempty(max_passes)
+    %max_passes = 200;
     max_passes = 5;
 end
 
